@@ -53,7 +53,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link active">About</a>
+                    <!-- <a href="about.html" class="nav-item nav-link active">About</a> -->
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Jobs</a>
                         <div class="dropdown-menu rounded-0 m-0">
@@ -75,10 +75,60 @@
             </div>
         </nav>
         <!-- Navbar End -->
-
+          
+        <div class="container-xxl bg-white p-0">
+            <!-- Job Details Section -->
+            <div class="container my-5">
+                <h1 class="text-primary mb-4">Software Development Engineer II (Java)</h1>
+                <p><strong>Company:</strong> Rupeek</p>
+                <p><strong>Location:</strong> Bangalore, India</p>
+                <p><strong>Description:</strong> 
+                    A challenging role as a Software Development Engineer to design and develop high-quality Java-based applications. Requires experience in large-scale application development.
+                </p>
+                <p><strong>Experience:</strong> ⌛ 2–5 Years</p>
+                <p><strong>Salary:</strong> 💰 ₹20L – ₹30L per year (Estimated)</p>
+                <a href="https://www.linkedin.com/jobs/view/software-development-engineer-ii-java-at-rupeek-4019954961/" class="btn btn-primary py-2 px-4">Apply Now</a>
+            </div>
+        </div>
+        <div id="formContainer">
+            <h1>Submit Your Resume</h1>
+            <form id="resumeForm">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+    
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+    
+                <label for="contact">Contact Number:</label><br>
+                <input type="tel" id="contact" name="contact" required><br><br>
+    
+                <label for="resume">Upload Resume:</label><br>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    
+        <div id="successMessage" class="hidden success-message">
+            Successfully Submitted!
+        </div>
+    
+        <script>
+            document.getElementById("resumeForm").onsubmit = function(event) {
+                event.preventDefault(); // Prevent the default form submission
+    
+                // Hide the form and show the success message
+                document.getElementById("formContainer").style.display = "none";
+                document.getElementById("successMessage").classList.remove("hidden");
+            };
+        </script>
+    
+        
+        
+ 
 
         <!-- Header End -->
-        <div class="container-xxl py-5 bg-dark page-header mb-5">
+        <!-- <div class="container-xxl py-5 bg-dark page-header mb-5">
             <div class="container my-5 pt-5 pb-4">
                 <h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
                 <nav aria-label="breadcrumb">
@@ -89,12 +139,12 @@
                     </ol>
                 </nav>
             </div>
-        </div>
+        </div> -->
         <!-- Header End -->
 
 
         <!-- About Start -->
-        <div class="container-xxl py-5">
+        <!-- <div class="container-xxl py-5">
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
@@ -123,7 +173,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- About End -->
 
 
@@ -133,7 +183,7 @@
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Company</h5>
-                        <a class="btn btn-link text-white-50" href="">About Us</a>
+                        <!-- <a class="btn btn-link text-white-50" href="">About Us</a> -->
                         <!-- <a class="btn btn-link text-white-50" href="">Contact Us</a> -->
                         <a class="btn btn-link text-white-50" href="">Our Services</a>
                         <!-- <a class="btn btn-link text-white-50" href="">Privacy Policy</a> -->
@@ -151,7 +201,7 @@
                         <h5 class="text-white mb-4">Contact</h5>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>India</p>
                         <!-- <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p> -->
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@jobzy.com</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>jobzy.site@gmail.com</p>
                         <!-- <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
